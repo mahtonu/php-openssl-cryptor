@@ -9,11 +9,11 @@ $key = '9901:io=[<>602vV03&Whb>9J&M~Oq';
 //Cryptor::getDefaultEncryptor()->setKey($key);
 
 //using the default key
-$encrypted = Cryptor::getDefaultEncryptor()->Encrypt($data);
+$encrypted = Cryptor::getDefaultEncryptor()->encrypt($data);
 
 echo "'$data' (" . strlen($data) . ") => '$encrypted'\n\n";
 
 //using the default key
-$decrypted = Cryptor::getDefaultEncryptor()->Decrypt($encrypted);
+$decrypted = Cryptor::getDefaultEncryptor()->decrypt($encrypted);
 
 echo "'$encrypted' => '$decrypted' (" . strlen($decrypted) . ")\n";

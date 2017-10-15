@@ -182,7 +182,7 @@ class Cryptor {
      * @param  int $fmt Optional override for the output encoding. One of FORMAT_RAW, FORMAT_B64 or FORMAT_HEX.
      * @return string      The encrypted string.
      */
-    public function Encrypt($in, $key='', $fmt = null) {
+    public function encrypt($in, $key='', $fmt = null) {
         $key = $this->getKey($key);
         return $this->encryptString($in, $key, $fmt);
     }
@@ -194,7 +194,7 @@ class Cryptor {
      * @param  int $fmt Optional override for the input encoding. One of FORMAT_RAW, FORMAT_B64 or FORMAT_HEX.
      * @return string      The decrypted string.
      */
-    public function Decrypt($in, $key='', $fmt = null) {
+    public function decrypt($in, $key='', $fmt = null) {
         $key = $this->getKey($key);
         return $this->decryptString($in, $key, $fmt);
     }
