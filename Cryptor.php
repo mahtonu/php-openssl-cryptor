@@ -202,8 +202,8 @@ class Cryptor {
     public static $_default_instance = NULL;
 
     /**
-     * Get default instance of Encrypter
-     * @return Encrypter
+     * Get default instance of Cryptor
+     * @return Cryptor
      */
     public static function getDefaultEncryptor() {
         if (is_null(self::$_default_instance)) {
